@@ -132,8 +132,8 @@ class ResourceManager(val coreManager: CoreManager) {
                 callback(total, 2, "Downloading: https://skripthub.net/api/v1/addon/")
                 downloadFile("https://skripthub.net/api/v1/addon/", addonsFile.absolutePath)
 
-                callback(total, 4, "Downloading: https://skripttools.net/api.php?t=skript&action=getlist")
-                downloadFile("https://skripttools.net/api.php?t=skript&action=getlist", skriptVersionsFile.absolutePath)
+                callback(total, 4, "Downloading: https://api.skripttools.net/v4/skript")
+                downloadFile("https://api.skripttools.net/v4/skript", skriptVersionsFile.absolutePath)
 
                 callback(total, 5, "Downloading: https://skripthub.net/api/v1/addonsyntaxlist/")
                 downloadFile("https://skripthub.net/api/v1/addonsyntaxlist/", skHubFile.absolutePath)
